@@ -1,9 +1,64 @@
 body{
     margin: 0;
     padding: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 30vh auto;
+    font-family: "Instrument Sans", sans-serif;
 }
 
+.logo{
+    width: 80%;
+    margin: 10px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container h2{
+    margin-right: 25px;
+    color: #69A066;
+    font-size: 1.5rem;
+}
+.logo-container a{
+    text-decoration: none;
+    color: #69A066;
+}
 aside{
     background-color: #1C1C1C;
+    height: 100vh;
+}
+
+.bar{
+    width: 80%;
+    height: 1px;
+    background-color: #7c7c7c;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+span.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    vertical-align: middle;
+    margin-right: 5px;
 }
