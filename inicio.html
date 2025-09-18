@@ -19,21 +19,84 @@
         </div>
         <div class="bar"></div>
         <nav>
-            <a href="inicio.html"><span class="material-symbols-outlined">home</span>Dashboard</a>
-            <a href="ingresos.html">Ingresos</a>
-            <a href="gastos.html">Gastos</a>
-            <a href="reportes.html">Reportes</a>
-            <a href="login.html">Cerrar sesión</a>
+            <a href="inicio.html" class="link-button">
+                <img src="media/home.png" alt="Home" class="button">
+                Dashboard
+            </a>
+
+            <a href="ingresos.html" class="link-button">
+                <img src="media/money.png" alt="Ingresos" class="button">
+                Ingresos
+            </a>
+
+            <a href="gastos.html" class="link-button">
+                <img src="media/money_off.png" alt="Gastos" class="button">
+                Gastos
+            </a>
+
+            <a href="reportes.html" class="link-button">
+                <img src="media/reports.png" alt="Reportes" class="button">
+                Reportes
+            </a>
+
+            <div class="green-bar">
+                <a href="login.html">Cerrar sesión</a>
+            </div>
         </nav>
 
     </aside>
-    <div class="dashboard">
+    
+    <div id="inicio" class="dashboard">
         <div>Saldo actual</div>
         <div>Ingresos del mes</div>
         <div>Gastos del mes</div>
         <div>Balance del mes</div>
         <div>Categorías principales de gasto</div>
         <div>Recordatorios</div>
+    </div>
+
+    <div id="añadir_ingreso">
+        <form>
+            <h2>Registrar nuevo ingreso</h2>
+            <div class="form-group">
+                <label for="monto">Monto</label>
+                <input type="number" id="monto" name="monto" required>
+            </div>
+            <div class="form-group">
+                <label for="categoria">Categoría</label>
+                <input type="text" id="categoria" name="categoria" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción</label>
+                <input type="text" id="descripcion" name="descripcion">
+            </div>
+        </form>
+    </div>
+
+    <div id="añadir_gasto">
+        <form>
+            <h2>Registrar nuevo ingreso</h2>
+            <div class="form-group">
+                <label for="monto">Monto</label>
+                <input type="number" id="monto" name="monto" required>
+            </div>
+            <div class="form-group">
+                <label for="categoria">Categoría</label>
+                <input type="text" id="categoria" name="categoria" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción</label>
+                <input type="text" id="descripcion" name="descripcion">
+            </div>
+        </form>
     </div>
 </body>
 </html>
